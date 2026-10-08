@@ -2,16 +2,16 @@
 <p>A web-Based e-commerce and real-time inventory monitoring system designed to manage culinary retail bussiness</p>
 
 ##Key Feature
-**Full-stack with react js and tailwind css E-commerce & Shopping Cart:** Dynamic product catalog with custom front-en notifications and interactived shopping cart management.
-**WhatsApp API Integration:**Automatically converts items in the shopping cart into a structuresd checout text format and dynamically redirects orders to the WhatsApps chat interface.
-**Smart Inventory Dasboard:** A continuous stock level monitoring panel featuring dynamic warning alerts("Warning/Harap Melakukan Pembelian Bahan Baku") triggered by customized low-stock limits.
-**Data Integration Engine:**Seamless Background data management, engineered to handle structural product data sync efficiently.
+* **Full-stack with react js and tailwind css E-commerce & Shopping Cart:** Dynamic product catalog with custom front-en notifications and interactived shopping cart management.
+* **WhatsApp API Integration:**Automatically converts items in the shopping cart into a structuresd checout text format and dynamically redirects orders to the WhatsApps chat interface.
+* **Smart Inventory Dasboard:** A continuous stock level monitoring panel featuring dynamic warning alerts("Warning/Harap Melakukan Pembelian Bahan Baku") triggered by customized low-stock limits.
+* **Data Integration Engine:**Seamless Background data management, engineered to handle structural product data sync efficiently.
 
 ##Tech Stack
-**Backend:**Laravel Framework(PHP)
-**Frontend library:** React.js/Innertia.js(jsx)
-**Database Management:** phpMyAdmin/MySQL
-**Version Control:** Git & github.
+* **Backend:**Laravel Framework(PHP)
+* **Frontend library:** React.js/Innertia.js(jsx)
+* **Database Management:** phpMyAdmin/MySQL
+* **Version Control:** Git & github.
 
 ##Project Media/Link
 
