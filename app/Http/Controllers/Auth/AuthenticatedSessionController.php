@@ -33,6 +33,12 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
+        if($request->user()->role === 'karyawan'){
+            return redirect()->intended('dashboard');
+        }
+        if($request->user()->role === 'pelanggan'){
+            return redirect()->intended('Welcome/produk');
+        }
 
         return redirect()->intended(RouteServiceProvider::HOME);
     }

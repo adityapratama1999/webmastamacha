@@ -4,7 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-
+use App\Http\Controllers\RawMaterialController;
+use App\Http\Controllers\SyncController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,9 +26,15 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth','verified','role:karyawan'])->group(function () {
+    Route::get('/dashboard', [RawMaterialController::class, 'index'])->name('dashboard');
+});
+
+Route::middleware(['auth','verified','role:karyawan'])->group(function () {
+    Route::get('/produk', function () {
+        return Inertia::render('Produk');
+    })->name('produk');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
